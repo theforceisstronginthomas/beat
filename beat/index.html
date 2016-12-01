@@ -1,0 +1,87 @@
+<html><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>Signature capture</title>
+<style>
+    
+    .button{
+        
+        width: 150px;
+        height: 150px;
+    }
+    
+    </style>
+    <body>
+<center>
+    
+    <font color="red"><h1>LETS JAM</h1></font>
+<audio id="audio1" src="KIIK%201.wav" controls preload="auto" autobuffer>hit me</audio>
+
+<audio id="audio2" src="Clap%201.wav" controls preload="auto" autobuffer>
+
+</audio>
+        <br>
+
+        
+<audio id="audio3" src="snare%201.wav" controls preload="auto" autobuffer>
+
+</audio>
+<audio id="audio4" src="Clap%20Roll.wav" controls preload="auto" autobuffer>
+
+</audio>
+    
+    <br>
+
+        
+<audio id="audio5" src="Doh.wav" controls preload="auto" autobuffer>
+
+</audio>
+<audio id="audio6" src="Duh.wav" controls preload="auto" autobuffer>
+
+</audio>
+
+
+<script>
+function PlaySound(soundobj) {
+
+var thissound=document.getElementById(soundobj);
+
+thissound.play();
+
+}
+
+
+function PauseSound(soundobj) {
+
+var thissound=document.getElementById(soundobj);
+
+thissound.pause();
+
+}
+
+
+</script>
+
+        
+
+<form>
+
+<input type="button" value="kick" class="button" onClick="PlaySound('audio1'),PlaySound('audio1')">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<input type="button" value="clap" class="button" onClick="PlaySound('audio2'),PlaySound('audio2')">
+    
+    <br> 
+    
+<input type="button" value="snare" class="button" onClick="PlaySound('audio3'),PlaySound('audio3')">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" value="clap roll" class="button" onClick="PlaySound('audio4'),PlaySound('audio4')">
+    
+    <br> 
+    
+<input type="button" value="Doh" class="button" onClick="PlaySound('audio5'),PlaySound('audio5')">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" value="Duh" class="button" onClick="PlaySound('audio6'),PlaySound('audio6')">
+
+
+</form>
+</body></html>
